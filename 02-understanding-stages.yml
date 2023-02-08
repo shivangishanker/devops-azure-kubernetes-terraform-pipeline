@@ -25,9 +25,7 @@ stages:
     steps:
     - bash: echo devdeploy firstJob
 - stage: QAdeploy
-  dependsOn: 
-  - Build
-  - devdeploy 
+  dependsOn: Build
   jobs:
   - job: FirstJob
     steps:
